@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-container {
+    @apply justify-center items-center flex h-screen w-screen;
+}
+.box {
+    @apply transition-all duration-500 bg-puccin-mantle h-1/2 w-1/2 rounded-3xl flex items-center justify-center hover:w-full hover:h-full hover:rounded-none hover:text-5xl;
+}
