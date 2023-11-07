@@ -563,37 +563,41 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.flex {
-  display: flex;
+.absolute {
+  position: absolute;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-screen {
+  height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-screen {
+  width: 100vw;
 }
 
-.items-center {
-  align-items: center;
+.bg-\[url\(\'\/assets\/bg\/falling-triangles\.svg\'\)\] {
+  background-image: url('/assets/bg/falling-triangles.svg');
 }
 
-.justify-center {
-  justify-content: center;
+.bg-center {
+  background-position: center;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.text-left {
+  text-align: left;
 }
 
-.bg-puccin-mantle {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--ctp-mantle), var(--tw-bg-opacity));
+.text-center {
+  text-align: center;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.text-right {
+  text-align: right;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-puccin-text {
@@ -601,17 +605,7 @@ video {
   color: rgba(var(--ctp-text), var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.flex-container {
+.main-container {
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -619,41 +613,50 @@ video {
   justify-content: center;
 }
 
-.box {
+.sub-container {
+  position: relative;
   display: flex;
   height: 50%;
   width: 50%;
   align-items: center;
   justify-content: center;
-  border-radius: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--ctp-mantle), var(--tw-bg-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
+  transition-duration: 700ms;
 }
 
-.box:hover {
+.sub-container:hover {
   height: 100%;
   width: 100%;
   border-radius: 0px;
-  font-size: 3rem;
-  line-height: 1;
 }
 
-.hover\:h-full:hover {
-  height: 100%;
+.sn {
+  height: 273px;
+  width: 229px;
+  background-image: url('/assets/sn.png');
+  background-position: center;
 }
 
-.hover\:w-full:hover {
-  width: 100%;
+.ic {
+  height: 273px;
+  width: 228px;
+  background-image: url('/assets/ic.png');
+  background-position: center;
 }
 
-.hover\:rounded-none:hover {
-  border-radius: 0px;
+.ke {
+  height: 273px;
+  width: 229px;
+  background-image: url('/assets/ke.png');
+  background-position: center;
 }
 
-.hover\:text-5xl:hover {
-  font-size: 3rem;
-  line-height: 1;
+.rs {
+  height: 273px;
+  width: 228px;
+  background-image: url('/assets/rs.png');
+  background-position: center;
 }
