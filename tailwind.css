@@ -3,25 +3,52 @@
 @tailwind utilities;
 
 .main-container {
-  @apply justify-center items-center flex h-screen w-screen;
+  @apply justify-center items-center flex h-screen w-screen gap-x-4 flex-col;
 }
 
-.sub-container {
-  @apply relative transition-all duration-700 text-lg h-1/2 w-1/2 flex items-center justify-center hover:w-full hover:h-full hover:rounded-none;
+.main-cell {
+  @apply bg-puccin-base text-puccin-text p-10 w-4/6 rounded-lg flex flex-col gap-y-6;
 }
 
-.sn {
-  @apply bg-[url('/assets/sn.png')] h-[273px] w-[229px] bg-center;
+.title {
+  @apply text-4xl font-bold justify-center flex;
 }
 
-.ic {
-  @apply bg-[url('/assets/ic.png')] h-[273px] w-[228px] bg-center;
+.communication {
+  @apply flex flex-col gap-y-4;
+}
+.education {
+  @apply flex flex-col gap-y-4;
+}
+.optional-area {
+  @apply flex flex-col gap-y-4;
+}
+.healthcare {
+  @apply flex flex-col gap-y-4;
+}
+h2 {
+  @apply transition-all duration-300; /* Setup transition */
+  @apply transform hover:-translate-y-1; /* Move element on hover */
+  @apply rounded-4xl backdrop-brightness-75
+    px-4 ring-2 ring-puccin-text w-max-content text-3xl; /* Style element */
 }
 
-.ke {
-  @apply bg-[url('/assets/ke.png')] h-[273px] w-[229px] bg-center;
+.main-cell ol {
+  @apply flex flex-col gap-y-2 list-inside list-decimal;
 }
 
-.rs {
-  @apply bg-[url('/assets/rs.png')] h-[273px] w-[228px] bg-center;
+.main-cell ul {
+  @apply flex flex-col gap-y-2 list-inside list-disc;
+}
+
+.main-cell li {
+  @apply text-lg p-0;
+}
+
+.main-cell p {
+  @apply inline-block whitespace-normal;
+}
+
+.main-cell ::marker {
+  @apply text-puccin-red;
 }

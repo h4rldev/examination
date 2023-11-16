@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "@catppuccin/tailwindcss": "^0.1.6"
+    "@catppuccin/tailwindcss": "^0.1.6",
+    "@iconify-json/ph": "^1.1.6",
+    "@iconify/tailwind": "^0.1.3"
   }
 }

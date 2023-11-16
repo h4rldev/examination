@@ -1,11 +1,29 @@
 /** @type {import('tailwindcss').Config} */
+const { addDynamicIconSelectors } = require("@iconify/tailwind");
+
 module.exports = {
-  content: [
-    "./*.html",
-    "./**/*.html",
-  ],
+  content: ["./*.html", "./**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        "4xl": "2rem",
+      },
+      animation: {
+        float: "float 1s linear infinite",
+      },
+      keyframes: {
+        float: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-10px)" },
+        },
+      },
+      animationFillMode: {
+        forwards: "forwards",
+      },
+      width: {
+        "max-content": "max-content",
+      },
+    },
   },
   plugins: [
     require("@catppuccin/tailwindcss")({
@@ -15,6 +33,12 @@ module.exports = {
       // which flavour of colours to use by default, in the `:root`
       defaultFlavour: "mocha",
     }),
+    // `icon-`
+    addDynamicIconSelectors(),
+    // `icon-hover-`
+    addDynamicIconSelectors({
+      prefix: "icon-hover",
+      overrideOnly: true,
+    }),
   ],
-}
-
+};
