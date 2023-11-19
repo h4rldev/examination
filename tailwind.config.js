@@ -4,9 +4,25 @@ const { addDynamicIconSelectors } = require("@iconify/tailwind");
 module.exports = {
   content: ["./*.html", "./**/*.html"],
   theme: {
+    fontFamily: {
+      mono: ["FiraCode Nerd Font Mono", "monospace"],
+    },
     extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu Nerd Font Propo", "sans-serif"],
+      },
       borderRadius: {
         "4xl": "2rem",
+      },
+      maxHeight: {
+        "1/6": "16.666667%",
+        "2/6": "33.333333%",
+        "3/6": "50%",
+        "4/6": "66.666667%",
+        "5/6": "83.333333%",
+      },
+      height: {
+        18: "4.5rem",
       },
       animation: {
         float: "float 1s linear infinite",
@@ -17,11 +33,21 @@ module.exports = {
           "100%": { transform: "translateY(-10px)" },
         },
       },
+      listStyleType: {
+        square: "square",
+      },
+      transisionProperty: {
+        width: "width",
+        underline: "text-decoration",
+      },
       animationFillMode: {
         forwards: "forwards",
       },
       width: {
         "max-content": "max-content",
+      },
+      backgroundImage: {
+        hideout: "url('/assets/bg/hideout.svg')",
       },
     },
   },

@@ -2,16 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+.topics h2 {
+  @apply transition-all duration-300; /* Setup transition */
+  @apply transform hover:-translate-y-1; /* Move element on hover */
+  @apply rounded-4xl backdrop-brightness-75
+    px-4 ring-2 ring-puccin-text w-max-content text-3xl; /* Style element */
+}
+
+.background {
+  @apply absolute h-screen w-screen bg-repeat bg-center;
+  @apply bg-hideout bg-puccin-surface2;
+}
 .main-container {
-  @apply justify-center items-center flex h-screen w-screen gap-x-4 flex-col;
+  @apply relative h-screen w-screen;
+  @apply justify-center items-center;
+  @apply flex gap-x-4 flex-col;
 }
 
 .main-cell {
-  @apply bg-puccin-base text-puccin-text p-10 w-4/6 rounded-lg flex flex-col gap-y-6;
+  @apply relative p-10 pb-0 w-5/6 h-5/6;
+  @apply bg-puccin-base rounded-2xl border-puccin-text border-4;
+  @apply text-puccin-text font-ubuntu;
+}
+
+.main-list {
+  @apply flex flex-col gap-y-2;
+  @apply list-inside;
+  @apply text-lg;
+}
+
+ul.main-list {
+  @apply list-square;
+}
+
+ol.main-list {
+  @apply list-decimal;
+}
+
+.main-cell ::marker {
+  @apply text-puccin-red;
 }
 
 .title {
-  @apply text-4xl font-bold justify-center flex;
+  @apply justify-center flex;
+  @apply text-4xl font-bold;
+}
+
+.topics {
+  @apply flex flex-col gap-y-16 max-h-5/6 overflow-y-auto scroll-smooth p-3;
 }
 
 .communication {
@@ -26,29 +64,40 @@
 .healthcare {
   @apply flex flex-col gap-y-4;
 }
-h2 {
-  @apply transition-all duration-300; /* Setup transition */
-  @apply transform hover:-translate-y-1; /* Move element on hover */
-  @apply rounded-4xl backdrop-brightness-75
-    px-4 ring-2 ring-puccin-text w-max-content text-3xl; /* Style element */
+.list-content {
+  @apply list-none ml-6 -mt-3 text-base flex-none;
+}
+.question {
+  @apply text-xl italic;
+}
+li.question {
+  @apply list-none;
 }
 
-.main-cell ol {
-  @apply flex flex-col gap-y-2 list-inside list-decimal;
+.question strong {
+  @apply text-puccin-teal font-mono text-2xl not-italic;
 }
 
-.main-cell ul {
-  @apply flex flex-col gap-y-2 list-inside list-disc;
+.footer {
+  @apply flex flex-col items-center justify-center text-lg h-32;
 }
 
-.main-cell li {
-  @apply text-lg p-0;
+.footer a {
+  @apply transition-all duration-300 ease-in-out hover:text-puccin-red hover:underline underline-offset-4;
 }
 
-.main-cell p {
-  @apply inline-block whitespace-normal;
+::-webkit-scrollbar {
+  @apply w-4;
 }
 
-.main-cell ::marker {
-  @apply text-puccin-red;
+::-webkit-scrollbar-track {
+  @apply rounded-2xl;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-puccin-surface0 rounded-2xl hover:bg-puccin-surface1;
+}
+
+::-webkit-scrollbar-corner {
+  @apply bg-puccin-base rounded-2xl;
 }

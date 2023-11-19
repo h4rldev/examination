@@ -2,109 +2,276 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Specifies the viewport for the browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Hello" />
+    <!-- Open Graph title for embeds -->
+    <meta property="og:title" content="Slutmoment M1" />
+    <!-- Open Graph type to specify what this is -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph image for embeds -->
+    <meta property="og:image" content="assets/favicon.svg" />
+    <!-- Open Graph description for embeds -->
+    <meta property="og:description" content="Webbens samhällspåverkan" />
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
-    <title>Hello</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <title>Slutmoment M1</title>
   </head>
   <body>
-    <!--
-    <section
-      class="absolute bg-center bg-[url('/assets/bg/falling-triangles.svg')] h-screen w-screen"
-    ></section>
-    -->
+    <!-- Sets the background -->
+    <section class="background"></section>
+
+    <!-- Main content container -->
     <main class="main-container">
-      <main class="main-cell">
-        <section class="title">
+      <!-- Main cell section -->
+      <section class="main-cell">
+        <section class="title" aria-label="Webbens samhällspåverkan">
           <h1>Webbens samhällspåverkan</h1>
         </section>
-        <section class="communication">
-          <h2>Kommunikation</h2>
-          <ol>
-            <li>
-              Utvecklingen av webben har revolutionerat kreativitet och estetik,
-              och demokratiserat det konstnärliga uttrycket för människor från
-              olika bakgrunder och platser. Det ökade också mångsidigheten i
-              uttryck genom att ge möjlighet till olika konstformer som
-              traditionell konst, fotografi, animation och interaktiv design.
-              Det uppmuntrade experiment och nya sätt att kommunicera idéer.
-            </li>
-            <li>
-              Webbutveckling har revolutionerat estetiska program genom att
-              förbättra tillgången till onlineutbildning och inspirerande
-              material från hela världen. Studenter kan anpassa sin utbildning
-              och skapa online portföljer för att visa upp sina färdigheter.
-            </li>
-          </ol>
-        </section>
-        <section class="education">
-          <h2>Utbildning eller utbildningssystemet</h2>
-          <ol>
-            <li>
-              Onlinelärande främjar estetiska färdigheter genom flexibilitet i studieplanering,
-              tillgång till globala experter och möjligheter till samarbete och feedback från medstudenter och fakulteter.
-            </li>
-            <li>
-              Att lära sig estetiska ämnen på nätet har sina egna utmaningar,
-              som svårigheter att skapa fysiskt, tillgången på teknik och brist på omedelbar feedback från lärare.
-              Att möta dessa utmaningar är avgörande för meningsfullt lärande.
-            </li>
-          </ol
-        </section>
-        <section class="optional-area">
-          <h2>Valfritt område</h2>
-          <p>Webben har förändrat e-handel och detaljhandel på följande sätt:</p>
-          <ul>
-            <li>
-              <p>
-                <span class="text-puccin-teal">Tillgänglighet</span>:
-                Webbutiker är tillgängliga 24/7 var som helst, vilket ökar användarvänligheten.</p>
-            </li>
-            <li>
-              <p>
-                <span class="text-puccin-teal">Global räckvidd</span>:
-                Onlineplattformar ger tillgång till globala marknader även för småföretag och entreprenörer.</p>
-            </li>
-            <li>
-              <p>
-                <span class="text-puccin-teal">Prisjämförelser och recensioner</span>:
-                Kunder kan enkelt jämföra priser och produkter och läsa recensioner innan de köper.</p>
-            </li>
-            <li>
-              <p>Personlig reklam:
-                Data och algoritmer används för personliga reklamkampanjer.</p>
-            </li>
-            <li>
-              <p>Digitala betalningar:
-                Säkra digitala betalningar är standard.</p>
-            </li>
-            <li>
-              <p>
-                Effektiv logistik:
+
+        <!-- Topics section -->
+        <section class="topics">
+          <!-- Communication sub-section -->
+          <section class="communication" aria-label="Kommunikation">
+            <h2 id="communication">
+              <a href="#communication">Kommunikation</a>
+            </h2>
+            <!-- Question 1 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong>
+                Hur har webbens utveckling påverkat hur vi uttrycker oss
+                kreativt och estetiskt? Reflektera över hur digitala plattformar
+                har förändrat sättet vi delar och interagerar med visuell konst,
+                design och estetiskt skapande.
+              </li>
+              <li value="1">
+                Utvecklingen av webben har revolutionerat kreativitet och
+                estetik, och demokratiserat det konstnärliga uttrycket för
+                människor från olika bakgrunder och platser. Det ökade också
+                mångsidigheten i uttryck genom att ge möjlighet till olika
+                konstformer som traditionell konst, fotografi, animation och
+                interaktiv design. Det uppmuntrade experiment och nya sätt att
+                kommunicera idéer.
+              </li>
+            </ol>
+
+            <!-- Question 2 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong>
+                Estetiska program fokuserar mycket på visuell kommunikation och
+                design. Hur har sociala medier och andra digitala plattformar
+                påverkat hur vi presenterar och kommunicerar estetiska idéer och
+                skapande till en bred publik?
+              </li>
+              <li>
+                Webbutveckling har revolutionerat estetiska program genom att
+                förbättra tillgången till onlineutbildning och inspirerande
+                material från hela världen. Studenter kan anpassa sin utbildning
+                och skapa online portföljer för att visa upp sina färdigheter.
+              </li>
+            </ol>
+          </section>
+
+          <!-- Education sub-section -->
+          <section
+            class="education"
+            aria-label="Utbildning eller utbildningssystemet"
+          >
+            <h2 id="education">
+              <a href="#education">Utbildning eller utbildningssystemet</a>
+            </h2>
+            <!-- Question 1 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong>
+                Inom estetiska program är kreativitet och design centrala. Hur
+                har webben öppnat möjligheter för studenter inom dessa områden
+                att lära sig nya tekniker och skapa egna verk online? Reflektera
+                över hur onlineutbildning kan påverka utvecklingen av estetiska
+                färdigheter.
+              </li>
+              <li value="1">
+                Onlinelärande främjar estetiska färdigheter genom flexibilitet i
+                studieplanering, tillgång till globala experter och möjligheter
+                till samarbete och feedback från medstudenter och fakulteter.
+              </li>
+            </ol>
+
+            <!-- Question 2 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong>
+                Onlineplattformar erbjuder tillgång till många estetiskt
+                inriktade kurser och resurser. Hur tror du att detta påverkar en
+                estetisk student möjlighet att utforska olika konstformer och
+                utveckla sina kreativa färdigheter? Vilka utmaningar kan
+                uppkomma med distansbaserad utbildning inom estetiska ämnen?
+              </li>
+              <li>
+                Att lära sig estetiska ämnen på nätet har sina egna utmaningar,
+                som svårigheter att skapa fysiskt, tillgången på teknik och
+                brist på omedelbar feedback från lärare. Att möta dessa
+                utmaningar är avgörande för meningsfullt lärande.
+              </li>
+            </ol>
+          </section>
+
+          <!-- Optional Area sub-section -->
+          <section class="optional-area" aria-label="Valfritt område">
+            <h2 id="optional-area">
+              <a href="#optional-area">Valfritt område</a>
+            </h2>
+            <ul class="main-list">
+              <li class="question">
+                <strong>></strong> Välj ett valfritt område du tycker att webben
+                har/har haft stor samhällspåverkan.
+              </li>
+              <li class="list-none">
+                Webben har förändrat e-handel och detaljhandel på följande sätt:
+              </li>
+              <li aria-labelledby="optional-area-strong-1">
+                <strong id="optional-area-strong-1" class="text-puccin-teal"
+                  >Tillgänglighet</strong
+                >
+              </li>
+              <li class="list-content">
+                Webbutiker är tillgängliga 24/7 var som helst, vilket ökar
+                användarvänligheten.
+              </li>
+              <li aria-labelledby="optional-area-strong-2">
+                <strong id="optional-area-strong-2" class="text-puccin-teal"
+                  >Global räckvidd</strong
+                >
+              </li>
+              <li class="list-content">
+                Onlineplattformar ger tillgång till globala marknader även för
+                småföretag och entreprenörer.
+              </li>
+              <li aria-labelledby="optional-area-strong-3">
+                <strong id="optional-area-strong-3" class="text-puccin-teal"
+                  >Prisjämförelser och recensioner</strong
+                >
+              </li>
+              <li class="list-content">
+                Kunder kan enkelt jämföra priser och produkter och läsa
+                recensioner innan de köper.
+              </li>
+              <li aria-labelledby="optional-area-strong-4">
+                <strong id="optional-area-strong-4" class="text-puccin-teal"
+                  >Personlig reklam</strong
+                >
+              </li>
+              <li class="list-content">
+                Data och algoritmer används för personliga reklamkampanjer.
+              </li>
+              <li aria-labelledby="optional-area-strong-5">
+                <strong id="optional-area-strong-5" class="text-puccin-teal"
+                  >Digitala betalningar</strong
+                >
+              </li>
+              <li class="list-content">
+                Säkra digitala betalningar är standard.
+              </li>
+              <li aria-labelledby="optional-area-strong-6">
+                <strong id="optional-area-strong-6" class="text-puccin-teal"
+                  >Effektiv logistik</strong
+                >
+              </li>
+              <li class="list-content">
                 Snabba leveransalternativ har utvecklats.
-              </p>
-            </li>
-            <li>
-              <p>
-                Miljöpåverkan:
-                E-handel kan minska miljöpåverkan genom att minska behovet av fysiska butiker.
-              </p>
-            </li>
-          </ul>
+              </li>
+              <li aria-labelledby="optional-area-strong-7">
+                <strong id="optional-area-strong-7" class="text-puccin-teal"
+                  >Miljöpåverkan</strong
+                >
+              </li>
+              <li class="list-content">
+                E-handel kan minska miljöpåverkan genom att minska behovet av
+                fysiska butiker.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Healthcare sub-section -->
+          <section class="healthcare" aria-label="Hälsovård">
+            <h2 id="healthcare"><a href="#healthcare">Hälsovård</a></h2>
+            <!-- Question 1 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong> Estetiska program innefattar ofta engagemang
+                i kreativt arbete. Hur har webben påverkat hur vi delar och
+                söker inspiration för estetiskt skapande? Diskutera hur digitala
+                plattformar kan fungera som källor till kreativ stimulans och
+                hur detta kan påverka studenternas välmående.
+              </li>
+              <li value="1">
+                Webben har påverkat hur vi delar och söker inspiration för
+                estetiskt skapande genom digitala plattformar som sociala
+                medier, konstgallerier och community-forum. Det har skapat ett
+                globalt förhållningssätt till konst och kreativitet som kan
+                förbättra elevernas välbefinnande genom möjligheten till
+                gemenskap och kreativt utbyte.
+              </li>
+            </ol>
+
+            <!-- Question 2 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong> Inom estetiska ämnen är fokus på skapande och
+                uttryck viktigt. Hur kan teknologin, inklusive webben, användas
+                för att stödja och förbättra studenternas kreativa process?
+                Diskutera även om det finns risker med att använda teknologi för
+                estetiskt skapande och hur dessa kan hanteras.
+              </li>
+              <li>
+                Teknik, inklusive webben, kan stödja och förbättra den kreativa
+                processen för estetiska studenter genom grafikprogram,
+                3D-modellering och animeringsprogram. Dessutom erbjuder
+                nätverket tillgång till onlinekurser och virtuella
+                konstgallerier, vilket berikar utbildning och utveckling av
+                studenter.
+              </li>
+            </ol>
+
+            <!-- Question 3 -->
+            <ol class="main-list">
+              <li class="question">
+                <strong>></strong> Diskutera även om det finns risker med att
+                använda teknologi för estetiskt skapande och hur dessa kan
+                hanteras.
+              </li>
+              <li class="list-none">
+                När det gäller risker bör användningen av teknik kontrolleras
+                för att undvika missbruk och överanvändning. En balans mellan
+                digitalt och fysiskt skapande bör främjas för att undvika
+                isolering och uppmuntra praktiskt arbete. Upphovsrätts- och
+                integritetsfrågor måste hanteras med omsorg och medvetenhet.
+              </li>
+            </ol>
+          </section>
         </section>
-        <section class="healthcare">
-          <h2>Hälsovård</h2>
-          <ol>
-            <li>
-              Webben har påverkat hur vi delar och söker inspiration för estetiskt skapande genom digitala plattformar som sociala medier, konstgallerier och community-forum. Det har skapat ett globalt förhållningssätt till konst och kreativitet som kan förbättra elevernas välbefinnande genom möjligheten till gemenskap och kreativt utbyte.
-            </li>
-            <li>
-              Teknik, inklusive webben, kan stödja och förbättra den kreativa processen för estetiska studenter genom grafikprogram, 3D-modellering och animeringsprogram. Dessutom erbjuder nätverket tillgång till onlinekurser och virtuella konstgallerier, vilket berikar utbildning och utveckling av studenter.
-            </li>
-            <p>När det gäller risker bör användningen av teknik kontrolleras för att undvika missbruk och överanvändning. En balans mellan digitalt och fysiskt skapande bör främjas för att undvika isolering och uppmuntra praktiskt arbete. Upphovsrätts- och integritetsfrågor måste hanteras med omsorg och medvetenhet.</p>
-          </ol>
+        <!-- End of topics section -->
+        <!-- Footer section -->
+        <section class="footer">
+          <p>
+            Skapad med <span class="text-puccin-red">❤</span> av
+            <a target="_blank" href="https://github.com/h4rldev"
+              >Oscar Sjödin Jansson</a
+            >
+          </p>
+          <p>
+            Använder sig av
+            <a
+              target="_blank"
+              href="https://github.com/h4rldev/examination/blob/main/LICENSE"
+              >BSD-3 Clause</a
+            >
+            licensen
+          </p>
+          <p>&copy Oscar Sjödin Jansson / h4rl</p>
         </section>
-      </main>
+      </section>
     </main>
   </body>
 </html>
