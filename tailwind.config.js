@@ -2,7 +2,7 @@
 const { addDynamicIconSelectors } = require("@iconify/tailwind");
 
 module.exports = {
-  content: ["./*.html", "./**/*.html"],
+  content: ["./index.html"],
   theme: {
     fontFamily: {
       mono: ["FiraCode Nerd Font Mono", "monospace"],
@@ -47,7 +47,7 @@ module.exports = {
         "max-content": "max-content",
       },
       backgroundImage: {
-        hideout: "url('/assets/bg/hideout.svg')",
+        hideout: "url('../assets/bg/hideout.svg')",
       },
     },
   },

@@ -659,7 +659,7 @@ video {
   /* Setup background size and positioning */
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-surface2), var(--tw-bg-opacity));
-  background-image: url('/assets/bg/hideout.svg');
+  background-image: url('../assets/bg/hideout.svg');
   /* Style and apply background */
 }
 
