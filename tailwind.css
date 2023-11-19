@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* Inject base styles */
+@tailwind components; /* Inject component classes */
+@tailwind utilities; /* Inject utility classes */
 
 .topics h2 {
   @apply transition-all duration-300; /* Setup transition */
@@ -10,94 +10,91 @@
 }
 
 .background {
-  @apply absolute h-screen w-screen bg-repeat bg-center;
-  @apply bg-hideout bg-puccin-surface2;
+  @apply absolute h-screen w-screen bg-repeat bg-center; /* Setup background size and positioning */
+  @apply bg-hideout bg-puccin-surface2; /* Style and apply background */
 }
 .main-container {
-  @apply relative h-screen w-screen;
-  @apply justify-center items-center;
-  @apply flex gap-x-4 flex-col;
+  @apply relative h-screen w-screen; /* Setup container size and positioning */
+  @apply justify-center items-center; /* Center container vertically and horizontally */
+  @apply flex gap-x-4 flex-col; /* Setup container as flexbox */
 }
 
 .main-cell {
-  @apply relative p-10 pb-0 w-5/6 h-5/6;
-  @apply bg-puccin-base rounded-2xl border-puccin-text border-4;
-  @apply text-puccin-text font-ubuntu;
+  @apply relative p-10 pb-0 w-5/6 h-5/6; /* Setup cell size and positioning aswell as padding */
+  @apply bg-puccin-base rounded-2xl border-puccin-text border-4; /* Style cell */
+  @apply text-puccin-text font-ubuntu; /* Style text */
 }
 
 .main-list {
-  @apply flex flex-col gap-y-2;
-  @apply list-inside;
-  @apply text-lg;
+  @apply flex flex-col gap-y-2; /* Setup list as flexbox */
+  @apply list-inside; /* Move list items inside element instead of outside */
+  @apply text-lg; /* Set font size */
 }
 
 ul.main-list {
-  @apply list-square;
+  @apply list-square; /* Set list style */
 }
 
 ol.main-list {
-  @apply list-decimal;
-}
-
-.main-cell ::marker {
-  @apply text-puccin-red;
+  @apply list-decimal; /* Set list style */
 }
 
 .title {
-  @apply justify-center flex;
-  @apply text-4xl font-bold;
+  @apply justify-center flex; /* Center title horizontally */
+  @apply text-4xl font-bold; /* Set font size and weight */
 }
 
 .topics {
-  @apply flex flex-col gap-y-16 max-h-5/6 overflow-y-auto scroll-smooth p-3;
+  @apply flex flex-col gap-y-16; /* Setup topics as flexbox */
+  @apply max-h-5/6 overflow-y-auto scroll-smooth; /* Setup scrollable topics */
+  @apply p-3; /* Add padding */
 }
 
-.communication {
-  @apply flex flex-col gap-y-4;
-}
-.education {
-  @apply flex flex-col gap-y-4;
-}
-.optional-area {
-  @apply flex flex-col gap-y-4;
-}
-.healthcare {
-  @apply flex flex-col gap-y-4;
+.topics section {
+  @apply flex flex-col gap-y-4; /* Setup section as flexbox */
 }
 .list-content {
-  @apply list-none ml-6 -mt-3 text-base flex-none;
+  @apply list-none ml-6 -mt-3 text-base; /* Setup subcontent of list */
 }
 .question {
-  @apply text-xl italic;
+  @apply text-xl italic; /* Set font size and style */
 }
 li.question {
-  @apply list-none;
+  @apply list-none; /* Remove list style */
 }
 
 .question strong {
-  @apply text-puccin-teal font-mono text-2xl not-italic;
+  @apply text-puccin-teal font-mono text-2xl not-italic; /* Set font size and style */
 }
 
 .footer {
-  @apply flex flex-col items-center justify-center text-lg h-32;
+  @apply flex flex-col items-center justify-center; /* Setup footer as flexbox */
+  @apply text-lg h-32; /* Set font size and height */
 }
 
 .footer a {
-  @apply transition-all duration-300 ease-in-out hover:text-puccin-red hover:underline underline-offset-4;
+  @apply transition-all duration-300 ease-in-out; /* Setup transition */
+  @apply hover:text-puccin-red hover:underline underline-offset-4; /* Style link */
+}
+
+::marker {
+  @apply text-puccin-red; /* Set marker color */
 }
 
 ::-webkit-scrollbar {
-  @apply w-4;
+  @apply w-4; /* Set scrollbar width */
 }
 
 ::-webkit-scrollbar-track {
-  @apply rounded-2xl;
+  @apply rounded-2xl; /* Set scrollbar track border radius */
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-puccin-surface0 rounded-2xl hover:bg-puccin-surface1;
+  @apply rounded-2xl; /* Set scrollbar thumb border radius */
+  @apply bg-puccin-surface0 hover:bg-puccin-surface1; /* Set scrollbar thumb color */
 }
 
 ::-webkit-scrollbar-corner {
-  @apply bg-puccin-base rounded-2xl;
+  @apply bg-puccin-base; /* Set scrollbar corner color */
+  @apply rounded-2xl; /* Set scrollbar corner border radius */
 }

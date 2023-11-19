@@ -563,6 +563,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+/* Inject base styles */
+
 .container {
   width: 100%;
 }
@@ -597,28 +599,10 @@ video {
   }
 }
 
-.flex {
-  display: flex;
-}
-
-.list-inside {
-  list-style-position: inside;
-}
+/* Inject component classes */
 
 .list-none {
   list-style-type: none;
-}
-
-.list-square {
-  list-style-type: square;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-puccin-red {
@@ -630,6 +614,8 @@ video {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-teal), var(--tw-text-opacity));
 }
+
+/* Inject utility classes */
 
 .topics h2 {
   transition-property: all;
@@ -670,21 +656,26 @@ video {
   width: 100vw;
   background-position: center;
   background-repeat: repeat;
+  /* Setup background size and positioning */
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-surface2), var(--tw-bg-opacity));
   background-image: url('/assets/bg/hideout.svg');
+  /* Style and apply background */
 }
 
 .main-container {
   position: relative;
   height: 100vh;
   width: 100vw;
+  /* Setup container size and positioning */
   align-items: center;
   justify-content: center;
+  /* Center container vertically and horizontally */
   display: flex;
   flex-direction: column;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+  /* Setup container as flexbox */
 }
 
 .main-cell {
@@ -693,98 +684,91 @@ video {
   width: 83.333333%;
   padding: 2.5rem;
   padding-bottom: 0px;
+  /* Setup cell size and positioning aswell as padding */
   border-radius: 1rem;
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgba(var(--ctp-text), var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-base), var(--tw-bg-opacity));
+  /* Style cell */
   font-family: Ubuntu Nerd Font Propo, sans-serif;
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-text), var(--tw-text-opacity));
+  /* Style text */
 }
 
 .main-list {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+  /* Setup list as flexbox */
   list-style-position: inside;
+  /* Move list items inside element instead of outside */
   font-size: 1.125rem;
   line-height: 1.75rem;
+  /* Set font size */
 }
 
 ul.main-list {
   list-style-type: square;
+  /* Set list style */
 }
 
 ol.main-list {
   list-style-type: decimal;
-}
-
-.main-cell ::marker {
-  --tw-text-opacity: 1;
-  color: rgba(var(--ctp-red), var(--tw-text-opacity));
+  /* Set list style */
 }
 
 .title {
   display: flex;
   justify-content: center;
+  /* Center title horizontally */
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
+  /* Set font size and weight */
 }
 
 .topics {
   display: flex;
-  max-height: 83.333333%;
   flex-direction: column;
   row-gap: 4rem;
+  /* Setup topics as flexbox */
+  max-height: 83.333333%;
   overflow-y: auto;
   scroll-behavior: smooth;
+  /* Setup scrollable topics */
   padding: 0.75rem;
+  /* Add padding */
 }
 
-.communication {
+.topics section {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-}
-
-.education {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-
-.optional-area {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-
-.healthcare {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
+  /* Setup section as flexbox */
 }
 
 .list-content {
   margin-left: 1.5rem;
   margin-top: -0.75rem;
-  flex: none;
   list-style-type: none;
   font-size: 1rem;
   line-height: 1.5rem;
+  /* Setup subcontent of list */
 }
 
 .question {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-style: italic;
+  /* Set font size and style */
 }
 
 li.question {
   list-style-type: none;
+  /* Remove list style */
 }
 
 .question strong {
@@ -794,23 +778,27 @@ li.question {
   font-style: normal;
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-teal), var(--tw-text-opacity));
+  /* Set font size and style */
 }
 
 .footer {
   display: flex;
-  height: 8rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Setup footer as flexbox */
+  height: 8rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  /* Set font size and height */
 }
 
 .footer a {
-  text-underline-offset: 4px;
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Setup transition */
+  text-underline-offset: 4px;
 }
 
 .footer a:hover {
@@ -819,16 +807,29 @@ li.question {
   text-decoration-line: underline;
 }
 
+.footer a {
+  /* Style link */
+}
+
+::marker {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-red), var(--tw-text-opacity));
+  /* Set marker color */
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
+  /* Set scrollbar width */
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 1rem;
+  /* Set scrollbar track border radius */
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
+  /* Set scrollbar thumb border radius */
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-surface0), var(--tw-bg-opacity));
 }
@@ -838,8 +839,14 @@ li.question {
   background-color: rgba(var(--ctp-surface1), var(--tw-bg-opacity));
 }
 
+::-webkit-scrollbar-thumb {
+  /* Set scrollbar thumb color */
+}
+
 ::-webkit-scrollbar-corner {
-  border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-base), var(--tw-bg-opacity));
+  /* Set scrollbar corner color */
+  border-radius: 1rem;
+  /* Set scrollbar corner border radius */
 }
