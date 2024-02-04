@@ -22,7 +22,7 @@
 .main-cell {
   @apply relative p-10 pb-0 w-5/6 h-5/6; /* Setup cell size and positioning aswell as padding */
   @apply bg-puccin-base rounded-2xl border-puccin-text border-4; /* Style cell */
-  @apply text-puccin-text font-ubuntu; /* Style text */
+  @apply text-puccin-text font-ubuntu overflow-y-auto; /* Style text */
 }
 
 .main-list {
@@ -68,7 +68,7 @@ li.question {
 }
 
 .footer {
-  @apply flex flex-col items-center justify-center; /* Setup footer as flexbox */
+  @apply absolute bottom-0 items-center justify-center; /* Setup footer as flexbox */
   @apply text-lg h-32; /* Set font size and height */
 }
 

@@ -692,6 +692,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-base), var(--tw-bg-opacity));
   /* Style cell */
+  overflow-y: auto;
   font-family: Ubuntu Nerd Font Propo, sans-serif;
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-text), var(--tw-text-opacity));
@@ -782,8 +783,8 @@ li.question {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
   align-items: center;
   justify-content: center;
   /* Setup footer as flexbox */
